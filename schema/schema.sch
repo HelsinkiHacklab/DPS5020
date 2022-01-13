@@ -1,0 +1,138 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "DPS5020 virtalähdekotelo"
+Date "2022-01-07"
+Rev "V2"
+Comp "Hacklab Hki"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Switch:SW_DPST SW1
+U 1 1 61D843A2
+P 5300 4000
+F 0 "SW1" H 5300 4325 50  0000 C CNN
+F 1 "SW_DPST" H 5300 4234 50  0000 C CNN
+F 2 "" H 5300 4000 50  0001 C CNN
+F 3 "~" H 5300 4000 50  0001 C CNN
+	1    5300 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Jack-DC J3
+U 1 1 61D8588C
+P 4400 3450
+F 0 "J3" H 4457 3775 50  0000 C CNN
+F 1 "Jack-DC" H 4457 3684 50  0000 C CNN
+F 2 "" H 4450 3410 50  0001 C CNN
+F 3 "~" H 4450 3410 50  0001 C CNN
+	1    4400 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J1
+U 1 1 61D860ED
+P 4350 3900
+F 0 "J1" H 4242 3675 50  0000 C CNN
+F 1 "BananaSocket,Red" H 4800 3900 50  0000 C CNN
+F 2 "" H 4350 3900 50  0001 C CNN
+F 3 "~" H 4350 3900 50  0001 C CNN
+	1    4350 3900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J2
+U 1 1 61D886AD
+P 4350 4100
+F 0 "J2" H 4242 3875 50  0000 C CNN
+F 1 "BananaSocket,black" H 4800 4100 50  0000 C CNN
+F 2 "" H 4350 4100 50  0001 C CNN
+F 3 "~" H 4350 4100 50  0001 C CNN
+	1    4350 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J4
+U 1 1 61D8BD04
+P 7750 3950
+F 0 "J4" H 7778 3976 50  0000 L CNN
+F 1 "BananaSocket,Red" H 7950 3950 50  0000 L CNN
+F 2 "" H 7750 3950 50  0001 C CNN
+F 3 "~" H 7750 3950 50  0001 C CNN
+	1    7750 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J5
+U 1 1 61D8C4D0
+P 7750 4050
+F 0 "J5" H 7778 4076 50  0000 L CNN
+F 1 "BananaSocket,black" H 7950 4050 50  0000 L CNN
+F 2 "" H 7750 4050 50  0001 C CNN
+F 3 "~" H 7750 4050 50  0001 C CNN
+	1    7750 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Fuse F1
+U 1 1 61D8CE04
+P 7050 3950
+F 0 "F1" V 6853 3950 50  0000 C CNN
+F 1 "Fuse" V 6944 3950 50  0000 C CNN
+F 2 "" V 6980 3950 50  0001 C CNN
+F 3 "~" H 7050 3950 50  0001 C CNN
+	1    7050 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L jj:DPS5020 U1
+U 1 1 61D90C31
+P 6000 3200
+F 0 "U1" H 6417 3715 50  0000 C CNN
+F 1 "DPS5020" H 6417 3624 50  0000 C CNN
+F 2 "" H 6000 3200 50  0001 C CNN
+F 3 "" H 6000 3200 50  0001 C CNN
+	1    6000 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 3900 5600 3900
+Wire Wire Line
+	5600 3900 5600 3950
+Wire Wire Line
+	5600 3950 5700 3950
+Wire Wire Line
+	5700 4050 5600 4050
+Wire Wire Line
+	5600 4050 5600 4100
+Wire Wire Line
+	5600 4100 5500 4100
+Wire Wire Line
+	4550 4100 4700 4100
+Wire Wire Line
+	4550 3900 4850 3900
+Wire Wire Line
+	4700 3550 4700 4100
+Connection ~ 4700 4100
+Wire Wire Line
+	4700 4100 5100 4100
+Wire Wire Line
+	4700 3350 4850 3350
+Wire Wire Line
+	4850 3350 4850 3900
+Connection ~ 4850 3900
+Wire Wire Line
+	4850 3900 5100 3900
+Wire Wire Line
+	6500 3950 6900 3950
+Wire Wire Line
+	7200 3950 7550 3950
+Wire Wire Line
+	6500 4050 7550 4050
+$EndSCHEMATC
