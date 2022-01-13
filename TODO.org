@@ -1,0 +1,82 @@
+* Muutokset
+
+** dps5020_v2
+   :PROPERTIES:
+   :CUSTOM_ID: DPS5020_v2
+   :END:
+
+- [X] Kotelon muutokset
+  - [X] Kotelon takaseinään 8mm reikä DC liitintä varten
+  - [X] Kotelon takaseinä virtakytkinmen aukon suurennus 21x30mm
+  - [X] github päivitys
+    - [X] kotelo.dxf
+    - [X] kansi.dxf poistetaa
+- [-] BOM lisäykset/muutos wikissä
+  - [ ] Feature DC-liitin lisää
+  - [ ] Feature: kytkin asennusaukko 21x30mm koko
+  - [X] DC runkoliitin 5.5mm/2.5mm
+  - [X] DC liittimen kytkentää varten Abiko haarukka 4.3 mm, +2 kpl
+  - [X] virtakytkin: asennusaukko 21x30mm +(13mmx19mm)+ 
+  - [ ] sulake, T (hidas), 5x20mm
+  - [ ] Materiaalit
+    - [ ] Kutistesukkaa
+    - [ ] 2.5mm2 johtoa
+    - [ ] 1.5mm2 johtoa
+- [X] Materiaalinhankinta
+  - [X] kotelo.dxf (pakattu dxf) 28 x 39 cm => 5 x 2 * (0,28 x 0,39) = 1.40  x 0.78 m
+  - [X] akryylilevy 2.05 x 1.52 m, josta leikataan 0.82 m x 1.52 m
+- [ ] Wiki ohjeet
+  - [ ] Linkki skeemaan: file:pics/schema.png
+  - [ ] Suositus juottaa Abiko liittimet ja suojata ne kutistesukalla
+  - [ ] DC-runkoliittimen juotoskorvat ovat ahtaat, mukana 1.5mm2 johto 
+  - [ ] Ehdotus käyttää PC virtalähdettä ja huomio, että PC
+    virtalähteiden DC liittimet eivät ole standardoituja -> Paketin DC liitin
+    kannattaa vaihtaa virtalähteeseen sopivaan
+  - [ ] poista github linkki katto.dxf
+  - [ ] Poltto-ohjeet
+    - [ ] import kotelo.dxf
+    - [ ] disable muut värit paitsi sisäviivat (cyan) && leikkaus
+    - [ ] disable muut värit paitsi reunaviivat (read) && leikkaus
+    - [ ] vinkit
+      - [ ] värien leikkausjärjestyksen vaihdossa värit muuttuvat ->
+        ei suositella (käytä disable)
+- [X] github README.org:
+  - [X] toimitusprosessi kuvaus
+    - [X] Fusion Body -> Save Mesh
+    - [X] plycutter
+    - [X] libreCad
+      - [X] edit: reunaviivat red
+      - [X] edit: sisäviivat cyan
+    - [X] deepnest
+      - [X] import kotelo && kansi
+      - [X] deepnest
+      - [X] export kotelo.dxf
+
+
+** v97
+   :PROPERTIES:
+   :CUSTOM_ID: v97
+   :END:
+
+- [X] naparuuvien läpivienti nyt 7.5 mm, pitää olla > 8mm (--> 8.3mm)
+- [X] USB aukko
+  - [X] nyt 6x12 --> 8.5x12
+  - [X] siirto sisäänpäin 1mm, 
+- [X] kansi
+  - [X] 0.2 mm kapeammaksi
+  - [X] n. 0.3 mm syvemmälle
+
+
+
+
+** Versio i (initial)
+   :PROPERTIES:
+   :CUSTOM_ID: i
+   :END:
+
+- naparuuvien läpivienti nyt 7.5 mm, pitää olla > 8mm (--> 8.5mm)                    
+- USB aukko 8.5x11.5, vasen sisäreuna lisää +2.5mm, korotus = siirto
+  sisäänpäin 1mm
+- kansi 0.2 mm kapeammaksi, n. 0.3 mm syvemmälle
+
+

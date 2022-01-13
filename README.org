@@ -1,0 +1,37 @@
+*  DPS5020 virtalähdekotelo
+:PROPERTIES:
+:TOC:      :include all
+:END:
+
+DPS5020 teholähteen kotelon tiedostojen tallennusrepositorio. Kotelon
+dokumentaatio https://wiki.helsinki.hacklab.fi/DPS5020_kotelo
+
+
+* Ohjeet kotelo.dxf tekemiseen
+
+- Exportoi Fusion 360:stä stl-tiedostot
+  - body 'Kotelo' -> Save Mesh virtalähde-kotelo-vXXX.stl
+  - body 'Kansi' -> Save Mesh virtalähde-kansi-vXXX.stl
+- Muunna [[https://github.com/tjltjl/plycutter][plycutter]]:lla stl tiedostot dxf-tiedostoiksi
+  - ~plycutter -o virtalähde-kotelo.dxf --thickness=3 virtalähde-kotelo-vXXX.stl~
+  - ~plycutter -o virtalähde-kansi.dxf --thickness=3 virtalähde-kotelo-vXXX.stl~
+- Yhdistä librecad:ssä dxf-tiedostot ja muokkaa ulkoreunojen ja sisäreunojen värit
+  - yhdistä ~virtalähde-kotelo.dxf~ ja ~virtalähde-kansi.dxf~ tiedostoon ~kotelo-osat.dxf~
+  - muokkaa ~kotelo.dxf~
+    - aseta väri kotelon osien ulkoreunojen väri:  modify -> attribute -> red 
+    - aseta väri kotelon osien sisäreunojen väri:  modify -> attribute -> cyan
+- kotelon osat asettelu aihioon ~deepnest~ -työkalulla
+  - import ~kotelo-osat.dxf~
+  - lisää suorakaide 20 x 20 cm ja merkkaa se "sheet"
+  - käynnistä deepnest operaatio ja odota, että kotelon osat pakkautuvat siististi
+  - export ~kotelo.dxf~
+- talleta  ~kotelo.dxf~ github:iin [[file:kotelo.dxf]]
+
+
+* Muutoslogi
+
+|       Pvm | Muutos                 | Suunnitelman versio |
+|-----------+------------------------+---------------------|
+| 13.1.2022 | DC-liitin, ohjeistusta | [[file:TODO.org::#DPS5020_V2][DPS5020_V2]]          |
+
+
