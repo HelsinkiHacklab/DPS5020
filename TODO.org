@@ -18,27 +18,27 @@
   - [X] DC liittimen kytkentää varten Abiko haarukka 4.3 mm, +2 kpl
   - [X] virtakytkin: asennusaukko 21x30mm +(13mmx19mm)+ 
   - [ ] sulake, T (hidas), 5x20mm
-  - [ ] Materiaalit
-    - [ ] Kutistesukkaa
-    - [ ] 2.5mm2 johtoa
-    - [ ] 1.5mm2 johtoa
+  - [X] Materiaalit
+    - [X] Kutistesukkaa
+    - [X] 2.5mm2 johtoa
+    - [X] 1.5mm2 johtoa
 - [X] Materiaalinhankinta
   - [X] kotelo.dxf (pakattu dxf) 28 x 39 cm => 5 x 2 * (0,28 x 0,39) = 1.40  x 0.78 m
   - [X] akryylilevy 2.05 x 1.52 m, josta leikataan 0.82 m x 1.52 m
-- [ ] Wiki ohjeet
+- [-] Wiki ohjeet
   - [ ] Linkki skeemaan: file:pics/schema.png
   - [ ] Suositus juottaa Abiko liittimet ja suojata ne kutistesukalla
   - [ ] DC-runkoliittimen juotoskorvat ovat ahtaat, mukana 1.5mm2 johto 
   - [ ] Ehdotus käyttää PC virtalähdettä ja huomio, että PC
     virtalähteiden DC liittimet eivät ole standardoituja -> Paketin DC liitin
     kannattaa vaihtaa virtalähteeseen sopivaan
-  - [ ] poista github linkki katto.dxf
-  - [ ] Poltto-ohjeet
-    - [ ] import kotelo.dxf
-    - [ ] disable muut värit paitsi sisäviivat (cyan) && leikkaus
-    - [ ] disable muut värit paitsi reunaviivat (read) && leikkaus
-    - [ ] vinkit
-      - [ ] värien leikkausjärjestyksen vaihdossa värit muuttuvat ->
+  - [X] poista github linkki katto.dxf
+  - [X] Poltto-ohjeet
+    - [X] import kotelo.dxf
+    - [X] disable muut värit paitsi sisäviivat (cyan) && leikkaus
+    - [X] disable muut värit paitsi reunaviivat (read) && leikkaus
+    - [X] vinkit
+      - [X] värien leikkausjärjestyksen vaihdossa värit muuttuvat ->
         ei suositella (käytä disable)
 - [X] github README.org:
   - [X] toimitusprosessi kuvaus
